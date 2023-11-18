@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Website</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="https://poltektegal.ac.id/">My College</a>
+        <a href="#contact"onclick="toggleContent('contact')">Contact Me</a>
+        <a href="#project"onclick="toggleContent('Project')">Latest Project</a>
+        <a href="#about"onclick="toggleContent('about')">About Me</a>
+    </div>
+
+    <!-- Hero -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>My Portofolio</h1>
+            <p>Informatics Engineering Student.</p>
+            <p>A Beginner for Data Analyst - UI/UX Designer</p>
+        </div>
+        <div class="hero-image">
+            <img src="Pro.png" alt="Hero Image">
+        </div>
+    </header>
+
+    <!-- About Me -->
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p1>Saya adalah seorang mahasiswi Teknik Informatika di Politeknik Harapan Bersama Tegal. Saya memiliki beragam kemampuan dan minat yang menjadikan ciri khas identitas saya dengan keunikan tersendiri.</p1>
+        
+            <div class="skills">
+                <h3>Kemampuan/Skill:</h3>
+                <ul>
+                    <li><strong>Bela Diri:</strong> Karate dan Muaythai</li>
+                    <li><strong>Bahasa Asing:</strong> Keterampilan berbahasa Inggris yang baik</li>
+                    <li><strong>Analisis dan Interpretasi Data:</strong> Keahlian dalam mengolah data</li>
+                </ul>
+            </div>
+        
+            <div class="experience">
+                <h3>Pengalaman:</h3>
+                <p1>Pada tahun 2023, saya memiliki pengalaman yang berharga dalam mengikuti lomba Gemastik Data Mining dan Bisnis ICT. Pengalaman ini tidak hanya mengasah kemampuan teknis saya, tetapi juga memperluas wawasan saya terhadap trend dan perkembangan di dunia Teknologi Informasi.</p1>
+            </div>
+        
+            <div class="interests">
+                <h3>Kesukaan:</h3>
+                <p1>Kesukaan utama saya adalah dalam seni bela diri, khususnya karate dan muaythai. Saya menemukan kepuasan dalam pengembangan diri melalui olahraga ini. Di samping itu, saya juga menyukai menonton film western, bukan hanya sebagai hiburan tetapi juga sebagai cara untuk melatih keterampilan listening bahasa Inggris saya.</p1>
+            </div>
+        
+            <div class="goals">
+                <h3>Tujuan/Goal:</h3>
+                <p1>Tujuan saya ke depannya adalah menjadi seorang data analyst yang sukses. Saya ingin terus mengembangkan keterampilan analisis dan interpretasi data saya untuk berkontribusi dalam pengambilan keputusan yang cerdas dan strategis di berbagai bidang.</p1>
+            </div>
+        </section>
+    </div>
+
+    <!-- Latest Project -->
+    <div class="container">
+        <section id="Project">
+            <h1>Latest Project</h1>
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('course')"> Course </button>
+                <button class="btn" onclick="filterSelection('project')"> Project </button>
+                <button class="btn" onclick="filterSelection('sertifikat')"> Certificate </button>
+            </div>
+    
+            <div class="row">
+                <div class="column course">
+                    <div class="course-item">
+                        <img src="Certificate_DataAnalist.jpg" style="width:100%">
+                        <h4>Course Data Analyst</h4>
+                    </div>
+                </div>
+                <div class="column course">
+                    <div class="course-item">
+                        <img src="TOEFL.jpg" style="width:110%">
+                        <h4>Certified TOEFL National</h4>
+                    </div>
+                </div>
+                <div class="column course">
+                    <div class="course-item">
+                        <img src="TOEFL_ITP.jpg" style="width:95%">
+                        <h4>Certified TOEFL International ITP</h4>
+                    </div>
+                </div>
+                <div class="column course">
+                    <div class="course-item">
+                        <img src="Certificate_MuayThai.jpg" style="width:100%">
+                        <h4>Certified Course MuayThai</h4>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="column project">
+                    <div class="project-item">
+                        <a href="https://drive.google.com/file/d/1NwG2grbaJGAjIaesemr7vq1sw_-excG7/view?usp=sharing" class="project-item" target="_blank">
+                        <img src="Project_DataMining.png" style="width:100%">
+                        <h4>Project Yolov5 Data Mining</h4>
+                    </div>
+                </div>
+                <div class="column project">
+                    <div class="project-item">
+                        <a href="https://www.figma.com/proto/bJ81wT1u8S9kcBaN0iu5P1/Project-Fianka-NETFLIX?node-id=1-26&starting-point-node-id=1%3A26&scaling=contain" class="project-item" target="_blank">
+                        <img src="Project_Netflix.png" style="width:96%">
+                        <h4>Project UI/UX Mobile App</h4>
+                    </div>
+                </div>
+                <div class="column project">
+                    <div class="project-item">
+                        <a href="https://jurnalpost.com/transformasi-ketatanegaraan-dalam-era-digital/52684/" class="project-item" target="_blank">
+                        <img src="Project_Berita.jpg" style="width:108%">
+                        <h4>Terbitan Berita JurnalPost</h4>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="column sertifikat">
+                    <div class="sertifikat-item">
+                        <img src="Certificate.jpg" style="width:100%">
+                        <h4>Certificate PKKMB</h4>
+                    </div>
+                </div>
+                <div class="column sertifikat">
+                    <div class="sertifikat-item">
+                        <img src="Certificate_UserEducation.jpg" style="width:96%">
+                        <h4>Certificate User Education</h4>
+                    </div>
+                </div>
+                <div class="column sertifikat">
+                    <div class="sertifikat-item">
+                        <img src="Certificate_MuayThai2.jpg" style="width:108%">
+                        <h4>Certificate MuayThai Fight</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+
+
+    <!-- Contact Me -->
+    <div class="container">
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <img src="Profile.jpeg" alt="Profile Picture" class="profile-picture">
+            <ul>
+                <li><strong>Alamat:</strong> Penarukan, Adiwerna, Kab.Tegal, Jawa Tengah.</li>
+                <li><strong>Email :</strong> fianka.amelia03@gmail.com</li>
+                <li><strong>Github:</strong> <a href="https://github.com/Fianka">Github Saya</a></li>
+                <li><strong>Facebook:</strong> <a href="https://web.facebook.com/fianka.fianka.509/">Facebook Saya</a></li>
+                <li><strong>Instagram:</strong> <a href="https://www.instagram.com/finn_rn/">Instagram Saya</a></li>
+            </ul>
+        </section>
+    </div>
+        
+    <footer>
+        <p>&copy; 2023 Portofolio - Politeknik Harapan Bersama Tegal. Fianka Amelia Nurul Umami.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

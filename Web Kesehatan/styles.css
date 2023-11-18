@@ -1,0 +1,159 @@
+/* style umum */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* Light Blue */
+    color: #01377d;
+    margin: 0;
+    padding: 0;
+}
+
+/* style Header */
+header {
+    background-color: #87ceeb; /* Sky Blue */
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    max-width: 200px;
+    height: auto;
+}
+
+/* style Home */
+#home {
+    text-align: center;
+    margin-top: 20px; 
+}
+
+#home p {
+    margin-top: 40px;
+}
+
+/* Style for the content sections */
+#content {
+    text-align: left;
+}
+
+h3 {
+    text-align: center;
+}
+
+/* style for the form*/
+form {
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid #dddddd;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* style Button form */
+input[type="text"], input[type="date"], select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="button"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: #45a049;
+}
+
+/* style for the table*/
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+}
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+nav {
+    background-color: #4682b4; /* Steel Blue */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    display: inline;
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+/* style section container */
+section {
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    max-width: 100%;
+}
+
+/* style for photo profile*/
+.profile-picture {
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 50%; 
+}
+
+/* style for footer */
+footer {
+    background-color: #4682b4; /* Steel Blue */
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+}
+
